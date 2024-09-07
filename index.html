@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Report</title>
+    <style>
+        @media print {
+            @page {
+                margin: 0.5cm;
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .subsection {
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .score-input {
+            width: 50px;
+        }
+        .comments {
+            width: 100%;
+            height: 100px;
+        }
+        .question {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #2c3e50;
+        }
+        .guidelines {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assessment Report</h1>
+    
+    <div class="section">
+        <h2>Candidate Information</h2>
+        <p><strong>Name:</strong> ________________________</p>
+        <p><strong>Candidate ID:</strong> ________________________</p>
+        <p><strong>Date of Assessment:</strong> ________________________</p>
+    </div>
+
+    <div class="section">
+        <h2>Evaluator Guidelines</h2>
+        <ul>
+            <li>Use the provided scoring guidelines for each section.</li>
+            <li>Provide a numerical grade for every subcategory.</li>
+            <li>Take detailed notes on candidate responses to justify your scoring.</li>
+            <li>Follow up on candidate answers with probing questions to assess depth of knowledge.</li>
+            <li>Consider both technical accuracy and communication skills in your evaluation.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>1. Technical Skills Assessment (40% of total score)</h2>
+        
+        <div class="subsection">
+            <h3>1.1 Programming Languages (100 points total)</h3>
+            
+            <h4>JavaScript (30 points)</h4>
+            <div class="question">
+                <p><strong>Static Question:</strong> Explain the difference between `let`, `const`, and `var` in JavaScript.</p>
+                <p><strong>Dynamic Follow-up:</strong> Can you provide an example where using `let` instead of `var` would prevent a common bug?</p>
+                <p class="guidelines">Look for understanding of block scope, hoisting, and practical applications.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Static Question:</strong> Describe the event loop in JavaScript and how it relates to asynchronous programming.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you handle multiple asynchronous operations that depend on each other?</p>
+                <p class="guidelines">Assess understanding of promises, async/await, and callback hell avoidance.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Coding Task:</strong> Write a function that deeply flattens an array in JavaScript.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you modify your solution to handle non-array elements?</p>
+                <p class="guidelines">Evaluate problem-solving approach, code efficiency, and handling of edge cases.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <h4>Python (25 points)</h4>
+            <div class="question">
+                <p><strong>Static Question:</strong> Explain the concept of decorators in Python and provide an example.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you create a decorator that measures the execution time of a function?</p>
+                <p class="guidelines">Look for understanding of higher-order functions and practical applications of decorators.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Static Question:</strong> Describe the differences between lists and tuples in Python.</p>
+                <p><strong>Dynamic Follow-up:</strong> In what scenarios would you choose a tuple over a list?</p>
+                <p class="guidelines">Assess understanding of mutability, performance implications, and use cases.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Coding Task:</strong> Implement a generator function in Python that yields prime numbers.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you optimize this function for large numbers?</p>
+                <p class="guidelines">Evaluate understanding of generators, optimization techniques, and algorithmic thinking.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="5"> / 5</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <!-- Add similar sections for Java and SQL -->
+
+        </div>
+
+        <div class="subsection">
+            <h3>1.2 Front-end Technologies (100 points total)</h3>
+            
+            <h4>React.js (30 points)</h4>
+            <div class="question">
+                <p><strong>Static Question:</strong> Explain the concept of React hooks and how they differ from class components.</p>
+                <p><strong>Dynamic Follow-up:</strong> Can you describe a scenario where you would use the useEffect hook?</p>
+                <p class="guidelines">Look for understanding of functional components, state management, and side effects.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Static Question:</strong> Describe the virtual DOM and its benefits in React.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you optimize the performance of a React application with many components?</p>
+                <p class="guidelines">Assess understanding of React's rendering process and performance optimization techniques.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Coding Task:</strong> Create a simple React component that fetches and displays data from an API.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you handle errors and loading states in this component?</p>
+                <p class="guidelines">Evaluate component structure, state management, and error handling.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="10"> / 10</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <!-- Add similar sections for Vue.js, HTML5/CSS3, and JavaScript frameworks -->
+
+        </div>
+
+        <!-- Add sections 1.3 Back-end Technologies, 1.4 Database Technologies, and 1.5 DevOps & Cloud with similar structure -->
+
+        <p><strong>Technical Skills Total:</strong> <input type="number" class="score-input" min="0" max="500"> / 500</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Problem-Solving Assessment (25% of total score)</h2>
+        
+        <div class="subsection">
+            <h3>2.1 Algorithm Design (100 points)</h3>
+            
+            <div class="question">
+                <p><strong>Problem:</strong> Design an algorithm to find the k most frequent elements in an array of integers. Your solution should run in O(n log k) time and O(n) extra space.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would your solution change if the array was too large to fit in memory?</p>
+                <p class="guidelines">Evaluate problem understanding, solution approach, complexity analysis, and ability to handle constraints.</p>
+                <table>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Problem understanding</td>
+                        <td><input type="number" class="score-input" min="0" max="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Solution approach</td>
+                        <td><input type="number" class="score-input" min="0" max="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Time complexity analysis</td>
+                        <td><input type="number" class="score-input" min="0" max="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Space complexity analysis</td>
+                        <td><input type="number" class="score-input" min="0" max="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Code quality and readability</td>
+                        <td><input type="number" class="score-input" min="0" max="10"></td>
+                    </tr>
+                </table>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+        </div>
+
+        <!-- Add sections 2.2 System Architecture, 2.3 Code Optimization, and 2.4 Debugging with similar structure -->
+
+        <p><strong>Problem-Solving Total:</strong> <input type="number" class="score-input" min="0" max="400"> / 400</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Soft Skills Evaluation (20% of total score)</h2>
+        
+        <div class="subsection">
+            <h3>3.1 Communication (100 points)</h3>
+            
+            <div class="question">
+                <p><strong>Scenario:</strong> Explain how the internet works to a non-technical person.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you adjust your explanation for a 10-year-old versus a senior executive?</p>
+                <p class="guidelines">Assess clarity of explanation, use of analogies, and ability to adapt communication style.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="50"> / 50</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+
+            <div class="question">
+                <p><strong>Task:</strong> Write a brief technical document explaining the architecture of a project you've worked on.</p>
+                <p><strong>Dynamic Follow-up:</strong> How would you modify this document for different stakeholders (e.g., developers vs. project managers)?</p>
+                <p class="guidelines">Evaluate structure, clarity, technical accuracy, and adaptability of written communication.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="50"> / 50</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+        </div>
+
+        <!-- Add sections 3.2 Teamwork, 3.3 Leadership, and 3.4 Adaptability with similar structure -->
+
+        <p><strong>Soft Skills Total:</strong> <input type="number" class="score-input" min="0" max="400"> / 400</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Cultural Fit Assessment (15% of total score)</h2>
+        
+        <div class="subsection">
+            <h3>4.1 Alignment with Company Values (100 points)</h3>
+            
+            <div class="question">
+                <p><strong>Scenario:</strong> Our company highly values innovation. Describe a time when you proposed and implemented an innovative solution in your previous role.</p>
+                <p><strong>Dynamic Follow-up:</strong> How do you stay updated with the latest trends in technology?</p>
+                <p class="guidelines">Assess alignment with company values, examples of living these values, and continuous learning attitude.</p>
+                <p>Score: <input type="number" class="score-input" min="0" max="100"> / 100</p>
+                <p>Comments: <textarea class="comments"></textarea></p>
+            </div>
+        </div>
+
+        <!-- Add sections 4.2 Innovation Mindset and 4.3 Diversity and Inclusion with similar structure -->
+
+        <p><strong>Cultural Fit Total:</strong> <input type="number" class="score-input" min="0" max="300"> / 300</p>
+    </div>
+
+    <div class="section">
+        <h2>Final Scoring</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Score</th>
+                <th>Weight</th>
+                <th>Weighted Score</th>
+            </tr>
+            <tr>
+                <td>Technical Skills</td>
+                <td><input type="number" class="score-input" min="0" max="500"></td>
+                <td>40%</td>
+                <td><input type="number" class="score-input" min="0" max="40"></td>
+            </tr>
+            <tr>
+                <td>Problem-Solving</td>
+                <td><input type="number" class="score-input" min="0" max="400"></td>
+                <td>25%</td>
+                <td><input type="number" class="score-input" min="0" max="25"></td>
+            </tr>
+            <tr>
+                <td>Soft Skills</td>
+                <td><input type="number" class="score-input" min="0" max="400"></td>
+                <td>20%</td>
+                <td><input type="number" class="score-input" min="0" max="20"></td>
+            </tr>
+            <tr>
+                <td>Cultural Fit</td>
+                <td><input type="number" class="score-input" min="0" max="300"></td>
+                <td>15%</td>
+                <td><input type="number" class="score-input" min="0" max="15"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Total Weighted Score</strong></td>
+                <td><input type="number" class="score-input" min="0" max="100"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Recommendation</h2>
+        <div class="recommendation">
+            <label><input type="radio" name="recommendation" value="strongly_recommend"> Strongly Recommend (90-100)</label><br>
+            <label><input type="radio" name="recommendation" value="recommend"> Recommend (75-89)</label><br>
+            <label><input type="radio" name="recommendation" value="recommend_with_reservations"> Recommend with Reservations (60-74)</label><br>
+            <label><input type="radio" name="recommendation" value="do_not_recommend"> Do Not Recommend (Below 60)</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Additional Comments and Observations</h2>
+        <p>Please provide any additional insights, concerns, or observations about the candidate that may be relevant to the hiring decision.</p>
+        <textarea class="comments" style="height: 150px;"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Key Strengths</h2>
+        <textarea class="comments" style="height: 100px;"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Areas for Improvement</h2>
+        <textarea class="comments" style="height: 100px;"></textarea>
+    </div>
+
+    <div class="section">
+        <h2>Evaluator Information</h2>
+        <p><strong>Name:</strong> ________________________</p>
+        <p><strong>Position:</strong> ________________________</p>
+        <p><strong>Date of Evaluation:</strong> ________________________</p>
+        <p><strong>Signature:</strong> ________________________</p>
+    </div>
+
+    <div class="section">
+        <h2>Next Steps</h2>
+        <p>Based on your evaluation, please indicate the recommended next steps:</p>
+        <div class="next-steps">
+            <label><input type="checkbox"> Schedule follow-up technical interview</label><br>
+            <label><input type="checkbox"> Proceed to team fit interview</label><br>
+            <label><input type="checkbox"> Request additional code samples or portfolio</label><br>
+            <label><input type="checkbox"> Conduct reference checks</label><br>
+            <label><input type="checkbox"> Prepare job offer</label><br>
+            <label><input type="checkbox"> Reject candidate</label><br>
+        </div>
+        <p>Additional notes on next steps:</p>
+        <textarea class="comments" style="height: 100px;"></textarea>
+    </div>
+
+</body>
+</html>
